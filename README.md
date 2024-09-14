@@ -21,7 +21,14 @@ https://github.com/elishacloud/dxwrapper
 
 ## Heads-up for reversing
 The IDA database is provided. Note that the intro video cannot be played during debugging. Disable it in Data/Script/GameParameters.pis (Text File). Also the patched version does not work inside a VM because the Microsoft Basic Display Adapter only supports a maximum resolution of 1280x1050. The display initialisation IDirectDraw7::setDisplayMode() will fail. You have to use a "real" GPU driver. 
-
+### Game script files
+The UI and probable many mechanics are defined via .ble file inside Data/Script/. These files are "encrypted" (byte-wise not) and are basically text definitions. The provided bleCoder.jar programm can en-/decode these files.
+### Multimedia
+A wrong media format crashes the game, otherwise it will be rendered appropriately.
+#### Video 
+```ffmpeg -i .\SomeVideo.mpg -c:v mpeg1video -c:a mp2 -ar 44100 -b:a 224k CompatibleVideo.mpg```
+#### Screens
+TGA 24bit 256-Indexed, In GIMP remove the alpha channel to get 24bit. Be aware that the default in GIMP for indexed Color is 255 not 256.
 ## Credits
 Thanks to the team at elishacloud for developing the dxwrapper and to my friends for giving me new inspirations when i was stuck reverse engineering. And of course all the credits to the people at Eidos and DeepRed for developing the game in the first place.
 
