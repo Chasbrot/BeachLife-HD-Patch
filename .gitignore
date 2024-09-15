@@ -8,7 +8,6 @@ Data/Sprites
 Data/Temp
 Data/WaterAnims
 Miles
-Data
 System
 Web Links
 *.log
@@ -20,3 +19,28 @@ autorun.exe
 autorun.inf
 *.bak
 SaveGames
+Data/Script/GUI/bleCoder.jar
+*.txt
+Data/Script/Object
+Data/Script/BuildingList.ble
+Data/Script/GameParameters.pis
+Data/Script/Guests01.ble
+Data/Script/Guests02.ble
+Data/Script/guests03.ble
+Data/Script/Guests04.ble
+Data/Script/Guests05.ble
+Data/Script/Guests06.ble
+Data/Script/Guests07.ble
+Data/Script/Guests08.ble
+Data/Script/Guests09.ble
+Data/Script/Guests10.ble
+Data/Script/Guests11.ble
+Data/Script/Guests12.ble
+Data/Script/SandboxE_guests.ble
+Data/Script/SandboxH_Guests.ble
+Data/Script/SandboxM_Guests.ble
+Data/cursor.tga
+Data/pathtiles.ble
+Data/text_uk.ble
+Data/Screens/FrontScreen_old.tga
+Data/Screens/mainmenu_old.tga
