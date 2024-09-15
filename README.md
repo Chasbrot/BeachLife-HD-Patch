@@ -8,10 +8,12 @@ I am not associated with Eidos Interactive in any way. All rights belong to them
 It is highly recommended that you install the dxwrapper dlls for better performance and v-sync support. You only need the main dxwrapper and ddraw dlls. A configured dxwrapper.ini is provided in the repository.
 https://github.com/elishacloud/dxwrapper
 
-## Installtion
+## Installation
 - Replace the main executable and ini file
 - Install dxwrapper and ini file
 - Enjoy!
+### If using the latest commit
+WIP: Replace the files from the data directory. Possibly unfinished, buggy or crashing
 
 ## Known issues
 - Main menu is only rendering in 800x600 (WIP)
