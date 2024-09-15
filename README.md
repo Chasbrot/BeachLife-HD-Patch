@@ -28,7 +28,16 @@ A wrong media format crashes the game, otherwise it will be rendered appropriate
 #### Video 
 ```ffmpeg -i .\SomeVideo.mpg -c:v mpeg1video -c:a mp2 -ar 44100 -b:a 224k CompatibleVideo.mpg```
 #### Screens
-TGA 24bit 256-Indexed, In GIMP remove the alpha channel to get 24bit. Be aware that the default in GIMP for indexed Color is 255 not 256.
+TGA 24bit 256-Indexed, In GIMP remove the alpha channel to get 24bit. Be aware that the default in GIMP for indexed Color is 255 not 256. After saving check with a hex editor for the correct header:
+
+| Offset Byte address | Value | Meaning |
+| :---------------- | :------: | ----: |
+| 05       |   0x00  | Lower byte color palette size |
+| 06         |   0x01  | Higher byte color palette size (256) |
+| 07   |  0x18  | 24bit color |
+
+Sometimes GIMP doesn't export the file correctly, in that case, save as png, close GIMP, open, load png and try exporting again.
+
 ## Credits
 Thanks to the team at elishacloud for developing the dxwrapper and to my friends for giving me new inspirations when i was stuck reverse engineering. And of course all the credits to the people at Eidos and DeepRed for developing the game in the first place.
 
