@@ -2,8 +2,6 @@
 Data/Haze
 Data/Movies
 Data/Scenario
-Data/Screens
-Data/Script
 Data/Sounds
 Data/Soundtrack
 Data/Sprites
@@ -21,3 +19,4 @@ sp.bin
 autorun.exe
 autorun.inf
 *.bak
+SaveGames
