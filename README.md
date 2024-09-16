@@ -16,7 +16,7 @@ https://github.com/elishacloud/dxwrapper
 WIP: Replace the files from the data directory. Possibly unfinished, buggy or crashing
 
 ## Known issues
-- Main menu is only rendering in 800x600 (WIP)
+- Main menu is rendering in FullHD. The background bitmaps had to be extended otherwise it crashes. I tried my best, but i am by no means a graphics designer.
 - Only the game is rendered at higher resolution, the assets are still the same quality.
 - Only tested on a FullHD monitor. Thanks to dxwrapper it should scale the image accordingly at any higher resolution.
 - Do not try to change the resolution in-game.
