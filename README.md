@@ -20,6 +20,7 @@ WIP: Replace the files from the data directory. Possibly unfinished, buggy or cr
 - Only the game is rendered at higher resolution, the assets are still the same quality.
 - Only tested on a FullHD monitor. Thanks to dxwrapper it should scale the image accordingly at any higher resolution.
 - Do not try to change the resolution in-game.
+- Credits crash the game
 
 ## Heads-up for reversing
 The IDA database is provided. Note that the intro video cannot be played during debugging. Disable it in Data/Script/GameParameters.pis (Text File). Also the patched version does not work inside a VM because the Microsoft Basic Display Adapter only supports a maximum resolution of 1280x1050. The display initialisation IDirectDraw7::setDisplayMode() will fail. You have to use a "real" GPU driver. 
