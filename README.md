@@ -14,8 +14,6 @@ Under the Folder: C:\Program Files (x86)\Eidos Interactive\Beach Life
 - Install dxwrapper and ini file (copy dxwrapper.dll, ddraw.dll and dxwrapper.ini there)
 - Replace Files from the /Data directory with the files from the repository
 - Enjoy! Everything should be working.
-### If using the latest commit
-Possibly unfinished, buggy or crashing
 
 ## Known issues
 - The background bitmaps had to be extended otherwise it crashes. I tried my best, but i am by no means a graphics designer.
